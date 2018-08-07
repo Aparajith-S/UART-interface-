@@ -1,0 +1,43 @@
+## Clock signal
+NET "clk"            LOC = "V10";
+Net "clk" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;
+
+## Buttons
+NET "rst"           LOC = "C9";
+NET "button"        LOC = "A8";
+
+# 7 Segment Display
+NET "seg<0>"        LOC = "T17";
+NET "seg<1>"        LOC = "T18";
+NET "seg<2>"        LOC = "U17";
+NET "seg<3>"        LOC = "U18";
+NET "seg<4>"        LOC = "M14";
+NET "seg<5>"        LOC = "N14";
+NET "seg<6>"        LOC = "L14";
+NET "seg<7>"        LOC = "M13";
+
+NET "an<0>"         LOC = "N16";
+NET "an<1>"         LOC = "N15";
+NET "an<2>"         LOC = "P18";
+NET "an<3>"         LOC = "P17";
+
+
+## Leds
+NET "led<0>"       LOC = "U16";
+NET "led<1>"       LOC = "V16";
+NET "led<2>"       LOC = "U15";
+NET "led<3>"       LOC = "V15";
+NET "led<4>"       LOC = "M11";
+NET "led<5>"       LOC = "N11";
+NET "led<6>"       LOC = "R11";
+NET "led<7>"       LOC = "T11";
+
+## Switches
+NET "switch<0>"     LOC = "T10";
+NET "switch<1>"     LOC = "T9";
+NET "switch<2>"     LOC = "V9";
+
+## Usb-RS232 interface
+NET "rxd"           LOC = "N17";
+NET "txd"           LOC = "N18";
